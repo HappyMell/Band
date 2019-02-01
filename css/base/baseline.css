@@ -1,0 +1,72 @@
+@define-mixin atSmall {
+  @media (min-width: 530px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atSmallMedium {
+  @media (min-width: 767px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atMedium {
+  @media (min-width: 960px) {
+    @mixin-content;
+  }
+}
+
+html {
+  height: 100%;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  position: relative;
+}
+
+body {
+  color: $ash;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left;
+  position: relative;
+  background: #fafafa;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+  font-size: x-large;
+}
+
+
+::selection {
+  background: #ffe49c;
+  color: #262626;
+}
+
+::-moz-selection {
+  background: #ffe49c;
+  color: #262626;
+}
+
+::-webkit-selection {
+  background: #ffe49c;
+  color: #262626;
+}
+
+a {
+  color: $ash;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p, ul, ol {
+  margin: 0 0 1.65em 0;
+}
+
+p, li {
+  line-height: 1.65;
+}
