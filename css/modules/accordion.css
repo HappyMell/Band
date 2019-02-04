@@ -1,0 +1,67 @@
+.accordion-container {
+    margin: 0 0 10px;
+    
+
+}
+.accordion-toggle {
+    padding: 12px;
+    overflow: auto;
+}
+.accordion-toggle.open,.accordion-toggle:hover {
+    background: #fff;
+
+
+}
+.accordion-toggle span.toggle-icon {
+	position: absolute;
+	top: 9px;
+	right: 20px;
+    font-size: 1.5em;
+     
+
+
+}
+#accordion-content {
+	position: relative;
+	display: block;
+	padding: 10px;
+	font-size: 1.5em;
+	font-weight: 300;
+	color: #fff;
+    text-decoration: none;
+           
+ 
+
+}
+
+.heading {
+    float: inline-start;
+}
+
+
+
+
+@-webkit-keyframes slide-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+}
+@keyframes slide-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+}
