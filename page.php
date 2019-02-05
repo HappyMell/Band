@@ -13,7 +13,6 @@
 <div class="row">
 <div class="news-content">
 
-<hr>
 <div class="news-title"> <?php the_title(); ?><?php the_content();?></div>
 </div>
 </div>

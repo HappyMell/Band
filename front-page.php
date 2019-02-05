@@ -20,7 +20,7 @@
         <div id="news" class="news-post sr-animation sr-animation-frombottom animated active" data-delay="300">
             <div class="news-content">
                 <div class="news-title">
-                <hr>
+            
 
                <?php 
                $homePageNews = new WP_Query(array(
@@ -48,7 +48,7 @@
          the_content(); ?> 
                </div>
         
-                <hr>
+                
 
              <?php  }
                ?>
@@ -61,4 +61,3 @@
     </section>
 </div>
                     
-<!-- -->

@@ -97,18 +97,6 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 
 /***/ }),
 
-/***/ "./wp-content/themes/band-theme/js/modules/BoxToggle.js":
-/*!**************************************************************!*\
-  !*** ./wp-content/themes/band-theme/js/modules/BoxToggle.js ***!
-  \**************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\n\n\nvar BoxToggle = function BoxToggle() {\n  _classCallCheck(this, BoxToggle);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (BoxToggle);\n\n//# sourceURL=webpack:///./wp-content/themes/band-theme/js/modules/BoxToggle.js?");
-
-/***/ }),
-
 /***/ "./wp-content/themes/band-theme/js/scripts.js":
 /*!****************************************************!*\
   !*** ./wp-content/themes/band-theme/js/scripts.js ***!
@@ -117,7 +105,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jque
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _modules_BoxToggle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/BoxToggle */ \"./wp-content/themes/band-theme/js/modules/BoxToggle.js\");\n\n\nvar boxToggle = new _modules_BoxToggle__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\n\n//# sourceURL=webpack:///./wp-content/themes/band-theme/js/scripts.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./wp-content/themes/band-theme/js/scripts.js?");
 
 /***/ })
 
