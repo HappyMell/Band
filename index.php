@@ -1,21 +1,38 @@
-<?php
-    get_header();
-
-    while(have_posts()) {
-        the_post(); 
-        ?>
-        
-<?php   }
+<?php 
+get_header(); 
+pageBanner(array(
+  'title' => 'Welcome to our blog!',
+  'subtitle' => 'Keep up with our latest news!'
+));
 ?>
-<div class="main-content">
-<div class="main-inner">
-<section id="section-home">
-<div class="row">
-<div class="news-content">
 
-<div class="news-title"> <?php the_title(); ?><?php the_content();?></div>
+
+
+<div class="container container--narrow page-section">
+  <?php 
+  while(have_posts()) {
+    the_post(); ?>
+  <div class="post-item">
+    <h2 class="headline headline--medium headline--post-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
+  </div>
+
+    <div class="metabox">
+      <p>Posted by: <?php the_author_posts_link();?> on <?php the_time('j.n.y');?> in <?php echo get_the_category_list(' ,')?></p> 
+    </div>
+
+    <div class="generic-content">
+    <?php the_excerpt();?> 
+    <p><a class="btn btn--blue" href="<?php the_permalink();?>">Continue reading</a></p> 
+    </div>
+  <?php }
+
+    echo paginate_links();
+
+  ?>
+
+
+
 </div>
-</div>
-</section>
-</div>
-</div>
+<?php get_footer();
+
+?>

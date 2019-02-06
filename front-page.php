@@ -1,19 +1,6 @@
 
 <?php get_header(); ?>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
- $(document).ready(function () {
-    $('.accordion-toggle').on('click', function(event){
-    	event.preventDefault();
-    	var accordion = $(this);
-    	var accordionContent = accordion.next('#accordion-content');
-    	accordion.toggleClass("open");
-    	accordionContent.slideToggle("slow");
-    	
-    });
-});
-  </script>
+ 
 <div class="main-content">
 
     <section id="section-home">
@@ -27,16 +14,17 @@
                 'posts_per_page' => -1,
                 'post_type' => 'news'
                ));
-                
+
                while($homePageNews->have_posts()) { 
-            ?>  <div class="accordion-container"> 
+            ?>  
+             <div class="accordion-container"> 
 
                <?php   $homePageNews->the_post(); ?>
-             <li class="heading"><a href="<?php the_permalink();?>"> <?php the_title();?> </a></li>
-            <img class="accordion-toggle"src="<?php echo THEME_IMG_PATH;?>/cross.png">
-        
+            <li class="heading"><a href="<?php the_permalink();?>"> <?php the_title();?> </a></li>
 
-                <div id="accordion-content">
+            <img class="accordion-toggle"src="<?php echo THEME_IMG_PATH;?>/cross.png">
+             <div id="accordion-content">
+
 
                  <?php 
                 $image = get_field('news_photo');
@@ -61,3 +49,4 @@
     </section>
 </div>
                     
+<?php get_footer()?>

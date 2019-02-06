@@ -21,12 +21,7 @@
           </ul>   
 
 </nav>
-<a class="open-responsive-nav" href="">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-</a>
+
 </aside>
 
 
