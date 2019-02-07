@@ -1,15 +1,7 @@
-import $ from 'jquery';
 
+import $ from 'jquery'
 
-$(document).ready(function () {
-    $('.accordion-toggle').on('click', function (event) {
-        event.preventDefault();
-        var accordion = $(this);
-        var accordionContent = accordion.next('#accordion-content');
+import accordion from './modules/Accordion';
 
-        accordion.toggleClass("open");
-        accordionContent.slideToggle("slow");
-    });
-
-});
+import options from './modules/Grid';
 

@@ -8,6 +8,7 @@ Version: 1.0
 @import "modules/header";
 @import "modules/front-page";
 @import "modules/accordion";
+@import "modules/grid";
 
 
 /* 3rd party package */

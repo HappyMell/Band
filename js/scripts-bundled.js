@@ -97,6 +97,30 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 
 /***/ }),
 
+/***/ "./wp-content/themes/band-theme/js/modules/Accordion.js":
+/*!**************************************************************!*\
+  !*** ./wp-content/themes/band-theme/js/modules/Accordion.js ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n\nvar accordion = jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {\n  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.accordion-toggle').on('click', function (event) {\n    event.preventDefault();\n    var accordion = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this);\n    var accordionContent = accordion.next('#accordion-content');\n    accordion.toggleClass(\"open\");\n    accordionContent.slideToggle(\"slow\");\n  });\n});\n/* harmony default export */ __webpack_exports__[\"default\"] = (accordion);\n\n//# sourceURL=webpack:///./wp-content/themes/band-theme/js/modules/Accordion.js?");
+
+/***/ }),
+
+/***/ "./wp-content/themes/band-theme/js/modules/Grid.js":
+/*!*********************************************************!*\
+  !*** ./wp-content/themes/band-theme/js/modules/Grid.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar options = function options() {};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (options);\n\n//# sourceURL=webpack:///./wp-content/themes/band-theme/js/modules/Grid.js?");
+
+/***/ }),
+
 /***/ "./wp-content/themes/band-theme/js/scripts.js":
 /*!****************************************************!*\
   !*** ./wp-content/themes/band-theme/js/scripts.js ***!
@@ -105,7 +129,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n\njquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {\n  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.accordion-toggle').on('click', function (event) {\n    event.preventDefault();\n    var accordion = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this);\n    var accordionContent = accordion.next('#accordion-content');\n    accordion.toggleClass(\"open\");\n    accordionContent.slideToggle(\"slow\");\n  });\n});\n\n//# sourceURL=webpack:///./wp-content/themes/band-theme/js/scripts.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _modules_Accordion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/Accordion */ \"./wp-content/themes/band-theme/js/modules/Accordion.js\");\n/* harmony import */ var _modules_Grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/Grid */ \"./wp-content/themes/band-theme/js/modules/Grid.js\");\n\n\n\n\n//# sourceURL=webpack:///./wp-content/themes/band-theme/js/scripts.js?");
 
 /***/ })
 
